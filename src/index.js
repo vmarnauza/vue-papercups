@@ -1,4 +1,5 @@
 import VuePapercups from "./components/VuePapercups";
+import { createWidget, destroyWidget, showWidget, hideWidget } from "./widget";
 
 export default {
   install(app) {
@@ -17,6 +18,10 @@ export default {
       toggle() {
         window.dispatchEvent(new Event("papercups:toggle"));
       },
+      create: createWidget,
+      destroy: destroyWidget,
+      show: showWidget,
+      hide: hideWidget,
     };
   },
 };

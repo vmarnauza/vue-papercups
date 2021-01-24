@@ -1,3 +1,5 @@
+import { createWidget, showWidget, hideWidget } from "../widget";
+
 export default {
   props: {
     // important
@@ -98,21 +100,17 @@ export default {
         },
       };
 
-      const papercups = document.createElement("script");
+      const widgetScriptEl = createWidget();
 
-      papercups.type = "text/javascript";
-      papercups.async = true;
-      papercups.defer = true;
-      papercups.src =
-        ("https:" === document.location.protocol ? "https://" : "http://") +
-        "app.papercups.io/widget.js";
-
-      const s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(papercups, s);
-
-      papercups.addEventListener("load", () => emit("scriptLoaded"));
-      papercups.addEventListener("error", () => emit("scriptError"));
+      widgetScriptEl.addEventListener("load", () => emit("scriptLoaded"));
+      widgetScriptEl.addEventListener("error", () => emit("scriptError"));
     }
+  },
+  mounted() {
+    showWidget();
+  },
+  beforeUnmount() {
+    hideWidget();
   },
   render() {
     return this.$slots.default;
