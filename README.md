@@ -29,7 +29,7 @@ Use in your component templates.
 
 ## Props
 
-These are the props you can pass into your `<vue-paperclips />` component:
+These are the props you can pass into your `<vue-papercups />` component:
 
 | Prop                              | Type      | Value                                                                                                                      | Default                          |
 | :-------------------------------- | :-------- | :------------------------------------------------------------------------------------------------------------------------- | :------------------------------- |
