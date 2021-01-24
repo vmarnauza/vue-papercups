@@ -76,6 +76,15 @@ export default {
       default: undefined,
     },
   },
+  emits: [
+    "chatLoaded",
+    "chatOpened",
+    "chatClosed",
+    "messageSent",
+    "messageReceived",
+    "scriptLoaded",
+    "scriptError",
+  ],
   setup(props, { emit }) {
     if (!window.Papercups) {
       window.Papercups = {
@@ -103,8 +112,9 @@ export default {
 
       papercups.addEventListener("load", () => emit("scriptLoaded"));
       papercups.addEventListener("error", () => emit("scriptError"));
-
-      return () => false;
     }
+  },
+  render() {
+    return this.$slots.default;
   },
 };
