@@ -12,9 +12,9 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "build": "webpack",
-    "deploy:patch": "npm run lint && npm run build && npm version patch && npm publish",
-    "deploy:minor": "npm run lint && npm run build && npm version minor && npm publish",
-    "deploy:major": "npm run lint && npm run build && npm version major && npm publish"
+    "deploy:patch": "npm run lint && npm run build && npm version patch && npm publish && git push",
+    "deploy:minor": "npm run lint && npm run build && npm version minor && npm publish && git push",
+    "deploy:major": "npm run lint && npm run build && npm version major && npm publish && git push"
   },
   "keywords": [
     "vue",
