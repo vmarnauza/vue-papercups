@@ -53,13 +53,26 @@ These are the props you can pass into your `<vue-paperclips />` component:
 
 ## Events
 
-| Event                 | Type                         | Value                                   | Default |
-| :-------------------- | :--------------------------- | :-------------------------------------- | :------ |
-| **`chatLoaded`**      | `() => void`                 | Callback fired when chat is loaded      | N/A     |
-| **`chatOpened`**      | `() => void`                 | Callback fired when chat is opened      | N/A     |
-| **`chatClosed`**      | `() => void`                 | Callback fired when chat is closed      | N/A     |
-| **`messageSent`**     | `(message: Message) => void` | Callback fired when message is sent     | N/A     |
-| **`messageReceived`** | `(message: Message) => void` | Callback fired when message is received | N/A     |
+| Event                 | Type                         | Value                                                | Default |
+| :-------------------- | :--------------------------- | :--------------------------------------------------- | :------ |
+| **`chatLoaded`**      | `() => void`                 | Callback fired when chat is loaded                   | N/A     |
+| **`chatOpened`**      | `() => void`                 | Callback fired when chat is opened                   | N/A     |
+| **`chatClosed`**      | `() => void`                 | Callback fired when chat is closed                   | N/A     |
+| **`messageSent`**     | `(message: Message) => void` | Callback fired when message is sent                  | N/A     |
+| **`messageReceived`** | `(message: Message) => void` | Callback fired when message is received              | N/A     |
+| **`scriptLoaded`**    | `(message: Message) => void` | Callback fired when Papercups widget script loads    | N/A     |
+| **`scriptError`**     | `(message: Message) => void` | Callback fired on Papercups widget script load error | N/A     |
+
+### Example
+
+```html
+// App.vue
+
+<vue-papercups
+  account-id="your-papercups-account-id"
+  @chatLoaded="yourCallbackMethod"
+/>
+```
 
 ## Global API
 
