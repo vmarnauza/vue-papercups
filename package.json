@@ -1,6 +1,6 @@
 {
   "name": "vue-papercups",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "A Vue 3 component for Papercups chat",
   "main": "dist/vue-papercups.js",
   "module": "src/index.js",
@@ -9,8 +9,8 @@
     "url": "git+https://github.com/vmarnauza/vue-papercups.git"
   },
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
     "build": "webpack",
     "deploy:patch": "npm run lint && npm run build && npm version patch && npm publish",
     "deploy:minor": "npm run lint && npm run build && npm version minor && npm publish",
