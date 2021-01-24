@@ -102,4 +102,4 @@ const config = this.$papercups.config();
 
 MIT © Viesturs Marnauza
 
-- [Twitter](https://twitter.com/park_narrative)
+[Twitter](https://twitter.com/park_narrative)
