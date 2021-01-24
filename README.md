@@ -87,6 +87,18 @@ this.$papercups.close();
 // toggle chat
 this.$papercups.toggle();
 
+// show widget
+this.$papercups.show();
+
+// hide widget
+this.$papercups.hide();
+
+// create widget - call destroy first to avoid loading the widget script multiple times
+this.$papercups.create();
+
+// destroy widget
+this.$papercups.destroy();
+
 // get current config
 const config = this.$papercups.config();
 ```
