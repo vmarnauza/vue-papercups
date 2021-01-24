@@ -1,0 +1,33 @@
+{
+  "name": "vue-papercups",
+  "version": "0.0.1",
+  "description": "A Vue 3 component for Papercups chat",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmarnauza/vue-papercups.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "vue",
+    "papercups",
+    "chat"
+  ],
+  "author": "Viesturs Marnauza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmarnauza/vue-papercups/issues"
+  },
+  "homepage": "https://github.com/vmarnauza/vue-papercups#readme",
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "prettier": "^2.2.1"
+  }
+}
