@@ -63,7 +63,7 @@ These are the props you can pass into your `<vue-paperclips />` component:
 | **`scriptLoaded`**    | `(message: Message) => void` | Callback fired when Papercups widget script loads    | N/A     |
 | **`scriptError`**     | `(message: Message) => void` | Callback fired on Papercups widget script load error | N/A     |
 
-### Example
+Example
 
 ```html
 // App.vue
@@ -95,6 +95,7 @@ const config = this.$papercups.config();
 ## Links
 
 [Papercups](https://papercups.io/)
+
 [Papercups chat widget repository](https://github.com/papercups-io/chat-widget)
 
 ## License
