@@ -63,11 +63,10 @@ These are the props you can pass into your `<vue-papercups />` component:
 | **`scriptLoaded`**    | `(message: Message) => void` | Callback fired when Papercups widget script loads    | N/A     |
 | **`scriptError`**     | `(message: Message) => void` | Callback fired on Papercups widget script load error | N/A     |
 
-Example
+For example:
 
 ```html
 // App.vue
-
 <vue-papercups
   account-id="your-papercups-account-id"
   @chatLoaded="yourCallbackMethod"
@@ -76,7 +75,7 @@ Example
 
 ## Global API
 
-Use the global `$papercups` object to interact with the chat widget or get its current config.
+Use the global `$papercups` object to interact with the chat widget or get its current config in your Vue components.
 
 ```js
 // open chat
@@ -92,7 +91,11 @@ this.$papercups.toggle();
 const config = this.$papercups.config();
 ```
 
-## Links
+## Used in
+
+[Tracknack](https://tracknack.com/)
+
+## Relevant links
 
 [Papercups](https://papercups.io/)
 
