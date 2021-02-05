@@ -1,6 +1,6 @@
 {
   "name": "vue-papercups",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Vue 3 component for Papercups chat",
   "main": "dist/vue-papercups.js",
   "module": "src/index.js",
