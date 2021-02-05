@@ -1,6 +1,7 @@
 import { createWidget, showWidget, hideWidget } from "../widget";
 
 export default {
+  name: "VuePapercups",
   props: {
     // important
     accountId: {
