@@ -78,10 +78,6 @@ export default {
       type: String,
       default: undefined,
     },
-    version: {
-      type: String,
-      default: "1.1.2",
-    },
   },
   emits: [
     "chatLoaded",
