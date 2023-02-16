@@ -56,7 +56,7 @@ export default {
     customer: {
       type: Object,
       default: () => ({
-        name: undefined,
+        name: "Anonymous",
         email: undefined,
         external_id: undefined,
         metadata: undefined,
