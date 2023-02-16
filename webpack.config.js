@@ -6,7 +6,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "vue-papercups.js",
-    library: "VuePapercups",
-    libraryTarget: "umd",
+    library: {
+      type: "commonjs2",
+    },
   },
 };
